@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUCAS – Tinh dầu tràm thiên nhiên</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green:#1b7f5c;
+      --green-dark:#0f5a40;
+      --light:#f4fbf8;
+      --gray:#555;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif;}
+    body{background:#fff;color:#222;line-height:1.6;}
+
+    header{
+      background:linear-gradient(135deg,var(--green),var(--green-dark));
+      color:white;
+      padding:80px 20px;
+      text-align:center;
+    }
+    header h1{font-size:3rem;font-weight:700;letter-spacing:2px;}
+    header p{font-size:1.1rem;margin-top:15px;opacity:0.95;}
+
+    section{padding:70px 10%;}
+
+    .intro{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+    .intro img{
+      width:100%;
+      border-radius:20px;
+      box-shadow:0 20px 40px rgba(0,0,0,0.15);
+    }
+    .intro h2{font-size:2.2rem;color:var(--green-dark);margin-bottom:15px;}
+    .intro p{color:var(--gray);}
+
+    .features{background:var(--light);}
+    .feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;margin-top:40px;}
+    .feature{
+      background:white;
+      padding:30px;
+      border-radius:18px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+    .feature:hover{transform:translateY(-8px);}
+    .feature h3{color:var(--green-dark);margin-bottom:10px;}
+    .feature p{font-size:0.95rem;color:#444;}
+
+    .product{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+    .product img{width:100%;border-radius:20px;}
+    .badge{display:inline-block;background:var(--green);color:white;padding:6px 14px;border-radius:20px;font-size:0.8rem;margin-bottom:15px;}
+
+    .info ul{margin-top:15px;}
+    .info li{margin-bottom:8px;color:#444;}
+
+    .team{background:var(--light);text-align:center;}
+    .team h2{color:var(--green-dark);}
+    .members{margin-top:30px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;}
+    .member{background:white;padding:20px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,0.08);}
+    .leader{border:2px solid var(--green);}
+
+    footer{
+      background:#111;
+      color:#aaa;
+      padding:30px 20px;
+      text-align:center;
+      font-size:0.9rem;
+    }
+
+    @media(max-width:900px){
+      .intro,.product{grid-template-columns:1fr;}
+      header h1{font-size:2.4rem;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>LUCAS</h1>
+  <p>Tinh dầu tràm thiên nhiên – Chưng cất bằng phương pháp lôi cuốn hơi nước</p>
+</header>
+
+<section class="intro">
+  <div>
+    <h2>Giới thiệu</h2>
+    <p>
+      <strong>LUCAS</strong> là sản phẩm tinh dầu tràm được nhóm thực hành Hóa học nghiên cứu và chưng cất
+      từ lá tràm tự nhiên. Sản phẩm mang mùi hương đặc trưng, dễ chịu và được đóng chai
+      theo tiêu chuẩn của một sản phẩm thương mại thực tế.
+    </p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6" alt="Tinh dầu tràm">
+</section>
+
+<section class="features">
+  <h2 style="text-align:center;color:var(--green-dark)">Ưu điểm nổi bật</h2>
+  <div class="feature-grid">
+    <div class="feature">
+      <h3>🌿 Thiên nhiên</h3>
+      <p>Chiết xuất 100% từ lá tràm, không pha tạp.</p>
+    </div>
+    <div class="feature">
+      <h3>💧 An toàn</h3>
+      <p>Không sử dụng hóa chất trong quá trình chưng cất.</p>
+    </div>
+    <div class="feature">
+      <h3>🔥 Hiệu quả</h3>
+      <p>Giữ ấm cơ thể, hỗ trợ thư giãn và làm sạch không khí.</p>
+    </div>
+    <div class="feature">
+      <h3>🧪 Học thuật</h3>
+      <p>Sản phẩm thực hành gắn liền với kiến thức Hóa học.</p>
+    </div>
+  </div>
+</section>
+
+<section class="product">
+  <img src="https://images.unsplash.com/photo-1622445275463-afa2ab738c34" alt="Chai tinh dầu">
+  <div class="info">
+    <span class="badge">Tinh dầu tràm LUCAS</span>
+    <h2>Thông tin sản phẩm</h2>
+    <ul>
+      <li><strong>Thành phần:</strong> 100% tinh dầu tràm (Melaleuca cajuputi)</li>
+      <li><strong>Dung tích:</strong> 10 ml</li>
+      <li><strong>Đóng gói:</strong> Chai thủy tinh nâu, nắp phun sương</li>
+      <li><strong>Cách dùng:</strong> Xịt vào không khí hoặc khăn tay</li>
+      <li><strong>Bảo quản:</strong> Tránh ánh nắng trực tiếp</li>
+    </ul>
+  </div>
+</section>
+
+<section class="process">
+  <h2 style="text-align:center;color:var(--green-dark)">Quy trình sản xuất</h2>
+  <div class="feature-grid" style="margin-top:40px">
+    <div class="feature"><h3>1️⃣ Chuẩn bị</h3><p>Thu hái lá tràm tươi, rửa sạch và cắt nhỏ để tăng hiệu suất.</p></div>
+    <div class="feature"><h3>2️⃣ Chưng cất</h3><p>Chưng cất lôi cuốn hơi nước để tách tinh dầu.</p></div>
+    <div class="feature"><h3>3️⃣ Ngưng tụ</h3><p>Hơi nước mang tinh dầu được làm lạnh và hóa lỏng.</p></div>
+    <div class="feature"><h3>4️⃣ Đóng chai</h3><p>Tinh dầu được lọc và đóng vào chai thủy tinh nắp phun sương.</p></div>
+  </div>
+</section>
+
+<section class="video" style="padding:80px 10%;text-align:center">
+  <h2 style="color:var(--green-dark)">Video giới thiệu sản phẩm</h2>
+  <p style="color:#555;margin:15px 0 30px">Video quảng bá / giới thiệu quy trình sản xuất tinh dầu tràm LUCAS</p>
+  <div style="max-width:800px;margin:auto">
+    <video controls style="width:100%;border-radius:20px;box-shadow:0 15px 35px rgba(0,0,0,0.15)">
+      <source src="video/lucas-tinh-dau-tram.mp4" type="video/mp4">
+      Trình duyệt của bạn không hỗ trợ video.
+    </video>
+  </div>
+</section>
+
+<section class="contact" style="background:linear-gradient(135deg,var(--green),var(--green-dark));color:white;text-align:center;padding:80px 10%">
+  <h2>Liên hệ & Đặt hàng (Demo)</h2>
+  <p style="margin:20px 0;opacity:0.95">Website phục vụ mục đích học tập – mô phỏng quảng bá sản phẩm</p>
+  <a href="https://zalo.me/0945223241" target="_blank" style="display:inline-block;margin-top:20px;padding:15px 35px;background:white;color:var(--green-dark);border-radius:30px;font-weight:600;text-decoration:none">Liên hệ Zalo nhóm trưởng</a>
+</section>
+
+<section class="team">
+  <h2>Nhóm thực hiện</h2>
+  <div class="members">
+    <div class="member leader">Hoàng Trần Anh<br><small>Nhóm trưởng</small></div>
+    <div class="member">Nguyễn Văn Danh</div>
+    <div class="member">Thái Đắc Đức</div>
+    <div class="member">Bùi Đình Khánh</div>
+    <div class="member">Lê Văn Đạo</div>
+    <div class="member">Cao Trí Kiên</div>
+  </div>
+</section>
+
+<footer>
+  © 2025 LUCAS – Website giới thiệu sản phẩm phục vụ học tập
+</footer>
+
+</body>
+</html>
